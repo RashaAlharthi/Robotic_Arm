@@ -1,23 +1,79 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Contorl</title>
-  <meta charset="utf-8">
-  <link rel=stylesheet href="slider.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=stylesheet href="style2.css"/>
 </head>
-
 <body>
-         <div class= "center">
-   <div class="content" style="width:300px" class= "center">
-    <input type="text" class="slider1" name="value1" text="Motor 1:" min=0 max=180> 
-    <input type="text" class="slider1" name="value2" text="Motor 2:" min=0 max=180>
-	<input type="text" class="slider1" name="value3" text="Motor 3:" min=0 max=180>
-    <input type="text" class="slider1" name="value4" text="Motor 4:" min=0 max=180>
-    <input type="text" class="slider1" name="value5" text="Motor 5:" min=0 max=180>
+  <div class="container">
+    <p class="title">Contorl Panel</p>
+    
+    <meta charset="utf-8">
+  <link rel=stylesheet href="style2.css"/>
+
+    <h4>Base:</h4>
+    <div class="slider-container">
+      <input type="range" value="0" min="0" max="180"  step="1" class="slider" id="MyRange">
+    </div>
+
+    <div class="label-container">
+      <div class="label-slider">0</div>
+	  <div class="label-slider">90</div>
+      <div class="label-slider">180</div>
+    </div>
+ 
+    
+    <h4>Shoulder:</h4>
+    <div class="slider-container">
+      <input type="range" value="0" min="0" max="180"  step="1" class="slider" id="MyRange">
+    </div>
+
+    <div class="label-container">
+      <div class="label-slider">0</div>
+	  <div class="label-slider">90</div>
+      <div class="label-slider">180</div>
+    </div>
+    
+    
+    <h4>Elbow:</h4>
+    <div class="slider-container">
+      <input type="range" value="0" min="0" max="180"  step="1" class="slider" id="MyRange">
+    </div>
+
+    <div class="label-container">
+      <div class="label-slider">0</div>
+	  <div class="label-slider">90</div>
+      <div class="label-slider">180</div>
+    </div>
+    
+    
+    <h4>Wrist:</h4>
+    <div class="slider-container">
+      <input type="range" value="0" min="0" max="180"  step="1" class="slider" id="MyRange">
+    </div>
+
+    <div class="label-container">
+      <div class="label-slider">0</div>
+	  <div class="label-slider">90</div>
+      <div class="label-slider">180</div>
+    </div>
+    
+    
+    
+    <h4>Gripper:</h4>
+    <div class="slider-container">
+      <input type="range" value="0" min="0" max="180"  step="1" class="slider" id="MyRange">
+    </div>
+
+    <div class="label-container">
+      <div class="label-slider">0</div>
+	  <div class="label-slider">90</div>
+      <div class="label-slider">180</div>
+    </div>
+  <button class="button button2">Save</button>
+<button class="button button2">On</button>
+
+</script>
   </div>
-<br><br>
-<button type="button">Save</button>
-<button type="button">On</button>
-  <script type="text/javascript" src="sliders.js"></script>
 </body>
 </html>
