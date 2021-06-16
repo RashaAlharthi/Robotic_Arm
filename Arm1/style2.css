@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 
 body {
-  font-family: "Catamaran", sans-serif;
-  background: #2b8aeb;
+  font-family: "OCR A Std", monospace;
+  background: url('https://www.akamai.com/uk/en/multimedia/images/intro/2018/akamai-iot-intro-image.png?imwidth=1366');
 }
 
 .container {
-  font-family: "Catamaran", sans-serif;
+  font-family:  "OCR A Std", monospace;
   width: 600px;
   margin: 30px auto 0;
   display: block;
@@ -19,9 +19,10 @@ body {
 
 .title {
   text-align: center;
-  font-family: "Dancing Script", cursive;
+  font-family:  "OCR A Std", monospace;
   color: #3949ab;
   font-size: 35px;
+  font-weight: bold;
 }
 
 .label-container {
@@ -78,7 +79,7 @@ body {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-  
+
 }
 
 input[type="range"],
@@ -148,13 +149,14 @@ input[type="range"]:focus {
 }
 
 .button {
-  background-color: #008CBA 
+  background-color: #008CBA
   border: none;
   color: white;
   padding: 12px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family:  "OCR A Std", monospace;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
@@ -162,8 +164,8 @@ input[type="range"]:focus {
 }
 
 .button2 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid #008CBA;
 }
 
