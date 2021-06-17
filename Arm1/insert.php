@@ -8,7 +8,7 @@
 	  $Base = $_POST['Base'];
 	  $Shoulder = $_POST['Shoulder'];
 	  $Elbow = $_POST['Elbow'];
-	  $Wrist  = $_POST['Wrist:'];
+	  $Wrist = $_POST['Wrist:'];
 	  $Gripper = $_POST['Gripper'];
 	  $On = $_POST['On'];
        $conn= new mysqli("localhost","root","","robot_arm");
