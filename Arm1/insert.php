@@ -1,5 +1,5 @@
 <?php
-$conn= new mysqli("localhost","root","s438011026","robot_arm");
+$conn= new mysqli("localhost","root","","robot_arm");
 $stmt=$conn->prepare("insert into arm (motor1,motor2,motor3,motor4,motor5,power)values(?,?,?,?,?,?)");
 $stmt->bind_param("iiiiii",$Base,$Shoulder,$Elbow,$Wrist,$Gripper,$On );
 $Base = $_POST['Base'];
