@@ -11,7 +11,7 @@
 
     <div class="slidecontainer">
       <h4>Base: <label><span class="limit"></span></label>  </h4>
-      <input type="range" value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name "Base" = value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -24,7 +24,7 @@
 
     <div class="slidecontainer">
       <h4>Shoulder: <label><span class="limit"></span></label>    </h4>
-      <input type="range" value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name= "Shoulder" value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -37,7 +37,7 @@
 
     <div class="slidecontainer">
       <h4>Elbow: <label><span class="limit"></span></label>  </h4>
-      <input type="range" value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name="Elbow" value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -50,7 +50,7 @@
 
     <div class="slidecontainer">
       <h4>Wrist: <label><span class="limit"></span></label>  </h4>
-      <input type="range" value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name="Wrist" value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -64,7 +64,7 @@
 
     <div class="slidecontainer">
         <h4>Gripper: <label><span class="limit"></span></label> </h4>
-      <input type="range" value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name = "Gripper" value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -72,8 +72,10 @@
 	  <div class="label-slider">90</div>
       <div class="label-slider">180</div>
     </div>
-  <button class="button button2">Save</button>
-<button class="button button2">On</button>
+  <button class="button button2"> 
+  <input type="button" name = "save"> Save</button>
+<button class="button button2"> 
+<input type="button" name = "On"> On</button>
 </form>
 <script type="text/javascript" src="sc.js"></script>
 </body>
