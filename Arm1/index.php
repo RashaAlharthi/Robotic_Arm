@@ -11,7 +11,7 @@
 
     <div class="slidecontainer">
       <h4>Base: <label><span class="limit"></span></label>  </h4>
-      <input type="range" name "Base" = value="0" min="0" max="180"  step="1" class="slider" >
+      <input type="range" name= "Base" value="0" min="0" max="180"  step="1" class="slider" >
     </div>
 
     <div class="label-container">
@@ -72,9 +72,9 @@
 	  <div class="label-slider">90</div>
       <div class="label-slider">180</div>
     </div>
-  <button class="button button2"> 
+  <button class="button button2">
   <input type="button" name = "save"> Save</button>
-<button class="button button2"> 
+<button class="button button2">
 <input type="button" name = "On"> On</button>
 </form>
 <script type="text/javascript" src="sc.js"></script>
