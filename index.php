@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel=stylesheet href="style.css"/>
+<link rel=stylesheet href="style.css"/> //link to the stylesheet
 </head>
 <body>
+  //php code for handel the save button
   <?php
-  if (isset ($_POST['submit'])) {
+  if (isset ($_POST['submit'])) { //if click save button
   $conn= new mysqli("localhost","root","","robot_arm");
   $stmt=$conn->prepare("insert into arm (motor1,motor2,motor3,motor4,motor5,power)values(?,?,?,?,?,?)");
   $stmt->bind_param("iiiiii",$Base,$Shoulder,$Elbow,$Wrist,$Gripper,$On );
@@ -21,6 +22,7 @@
   $conn->close();
 }
   ?>
+  //html code for the interface
   <div class="container">
     <form name="handle" action="index.php" method="post">
     <p class="title">Contorl Panel <img src="arm-pic.jpg" alt="robot arm" style= "width:60px;height:60px;"> </p>
@@ -93,6 +95,7 @@
   <input type="hidden" name="On" value="0" />
 </form>
 </div>
+//link html to the JS file contain 2 function
 <script type="text/javascript" src="sc.js"></script>
 </body>
 </html>
