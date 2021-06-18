@@ -1,3 +1,7 @@
+function function1(){
+  document.forms['handle'].action = 'handle_On.php';
+    document.forms['handle'].action.submit();
+  }
 function updateLabel() {
   var limit = this.parentElement.getElementsByClassName("limit")[0];
   limit.innerHTML = this.value;

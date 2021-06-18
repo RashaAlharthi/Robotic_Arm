@@ -94,11 +94,5 @@
 </form>
 </div>
 <script type="text/javascript" src="sc.js"></script>
-<script type="text/javascript">
-  function function1(){
-    document.forms['handle'].action = 'handle_On.php';
-      document.forms['handle'].action.submit();
-  }
-</script>
 </body>
 </html>
