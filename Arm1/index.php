@@ -5,8 +5,24 @@
 <link rel=stylesheet href="style2.css"/>
 </head>
 <body>
+  <?php
+  if (isset ($_POST['submit'])) {
+  $conn= new mysqli("localhost","root","","robot_arm");
+  $stmt=$conn->prepare("insert into arm (motor1,motor2,motor3,motor4,motor5,power)values(?,?,?,?,?,?)");
+  $stmt->bind_param("iiiiii",$Base,$Shoulder,$Elbow,$Wrist,$Gripper,$On );
+  $Base = $_POST['Base'];
+  $Shoulder = $_POST['Shoulder'];
+  $Elbow = $_POST['Elbow'];
+  $Wrist = $_POST['Wrist'];
+  $Gripper = $_POST['Gripper'];
+  $On = $_POST['On'];
+  $stmt->execute();
+  $stmt->close();
+  $conn->close();
+}
+  ?>
   <div class="container">
-    <form action="insert.php" method="post">
+    <form name="handle" action="index.php" method="post">
     <p class="title">Contorl Panel <img src="arm-pic.jpg" alt="robot arm" style= "width:60px;height:60px;"> </p>
 
     <div class="slidecontainer">
@@ -72,11 +88,17 @@
 	  <div class="label-slider">90</div>
       <div class="label-slider">180</div>
     </div>
-  <button class="button button2">Save</button>
-<button class="button button2" name="On">On</button>
-<input type="hidden" name="On" value="0" />
+  <button class="button button2" name="submit">Save</button>
+  <button class="button button2" onclick="function1();" name="On">On</button>
+  <input type="hidden" name="On" value="0" />
 </form>
 </div>
 <script type="text/javascript" src="sc.js"></script>
+<script type="text/javascript">
+  function function1(){
+    document.forms['handle'].action = 'handle_On.php';
+      document.forms['handle'].action.submit();
+  }
+</script>
 </body>
 </html>
